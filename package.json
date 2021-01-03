@@ -4,9 +4,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "ng build --aot --prod",
-    "heroku-postbuild": "ng build --prod &amp;&amp; npm install -g http-server-spa",
-    "start_local": "ng serve",
-    "start": "http-server-spa dist/personafront index.html $PORT",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

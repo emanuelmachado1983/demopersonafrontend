@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "heroku-postbuild": "ng build --prod && npm install -g http-server-spa",
-    "start": "ng serve",
+    "start_local": "ng serve",
+    "start": "http-server-spa dist/angular-reddit-clone index.html $PORT",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
